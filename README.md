@@ -51,3 +51,30 @@ Input format:
 ● the person can start their journey from any layer on the starting location and end at any layer on the ending location.
 
 Create a function GetMinCost(int start , int end) that returns the minimum cost for going from starting point to the end point.Start is not necessarily less than end.
+
+## Assignment 03
+
+### Question-01
+### Question-02
+
+In the enchanted land of Numerica, where numbers orchestrated a magical
+symphony, a new quest unfurled before the adventurers. Digitara, the wise
+sorcerer, faced a challenge with the mystical number 'x.' The task was a unique
+operation—removing one digit at a time while adhering to specific rules.
+
+The rules of this mystical operation were crystal clear:
+• The resulting number must avoid any leading zeroes.
+• The outcome must remain a positive integer.
+Goal:
+The adventurers aimed to unveil the smallest positive integer from 'x' by
+applying this operation 'k' times. The magical process unfolded as follows:
+• Commence with the original number 'x.'
+• Remove one digit, ensuring it follows the rules.
+• Repeat this process 'k' times to reveal the smallest possible number.
+
+An example illuminated the adventurers' path: 'x' as 10142, with 'k'set to 2.
+• Start with 10142, remove '4' to get 1012.
+• Remove another digit, like '2,' to obtain 101.
+• The result—the smallest positive integer achievable with 'k' operations—
+was 101. Notably, trailing zeroes were forbidden in this mystical arithmetic.
+### Question-03
