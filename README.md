@@ -18,3 +18,15 @@ The bottom layer represents walking, the middle layer represents the bus, and th
 ● A reference `up` taking you up to the SAME location in a faster mode of transport.
 
 For instance, in the diagram above, node 5 in the metro layer points to node 5 in the bus layer, which in turn points to node 5 in the walking layer. `next` will be set to null if there is no stop at the next location on the current mode of transport, and `down` will be set to null if you are in the walking layer or if the lower layer has no location with the same node id. prev will be set to null if there is no location before the current node in the same layer. You cannot directly go from the metro layer to the walking layer node if there is no bus node.
+
+Create the following functions:
+    addNode(int layer, int location_id)
+    deleteNode(int layer, int location_id)
+    getPath(int start, int end)
+
+The layers and their locations are read from a text file such as 
+    6 6 6 
+    1 2 3 4 9 10
+    1 3 4 5 6 9 
+    1 3 4 5 7 9
+The first line must contain three integers: n, m, and q, representing the number of stations in the first, second, and third layers, respectively.
