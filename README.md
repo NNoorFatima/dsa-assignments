@@ -25,8 +25,13 @@ Create the following functions:
     getPath(int start, int end)
 
 The layers and their locations are read from a text file such as 
-    6 6 6 
+
+    6 6 6
+
     1 2 3 4 9 10
+
     1 3 4 5 6 9 
+
     1 3 4 5 7 9
+    
 The first line must contain three integers: n, m, and q, representing the number of stations in the first, second, and third layers, respectively.
