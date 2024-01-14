@@ -55,6 +55,44 @@ Create a function GetMinCost(int start , int end) that returns the minimum cost 
 ## Assignment 03
 
 ### Question-01
+
+In the land of Wordsmithia, where words danced in the pages of enchanted
+dictionaries, a unique challenge arose. The wise sage Lexico faced a task involving
+the mystical art of lexicographical order.
+Lexico explained, "Lexicographically means arranging things just like the words in a
+wizard's dictionary. For instance, consider two magical strings:
+String 1: abcdef
+String 2: abcdez
+String 2 is lexicographically larger than String 1. The magic lies in the first position
+where they differ—'z' in String 2 comes after 'f' in String 1. We compare characters
+at this first differing position, and 'z' is greater than 'f' by their ASCII values. So,
+String 2 is lexicographically larger."
+Now, imagine you have a string "s" and a magical number "k." Your quest is to find
+the lexicographically maximum possible string after removing k characters.
+Let's embark on a couple of adventures:
+example 1:
+    input s="fzlyoapx", K=2
+    output: "zyoapx"
+
+In this enchanting tale, the string
+"fzlyoapx" holds a secret. To make it as large as possible, we must remove two
+characters. Lexico, with a glint in his eye, identifies the humble 'f' and ‘l’ as the ones. By banishing 'f' and ‘l’ the string transforms into "zyoapx," standing tall as the
+lexicographically maximum.
+example 2:
+    input s="xdycz", K=2
+    output: "ycz"
+
+In this mystical journey, we encounter the
+string "xdycz" and the challenge of removing two characters. To maximize its
+lexicographical greatness, we bid farewell to the first two characters, 'x' and 'd.'
+The residue, "ycz," emerges as the triumphant lexicographical zenith.
+
+And remember, any other removals would lead to a smaller lexicographicalstring.
+Lexico hints at the use of a magical staff known as the Stack, ensuring a swift
+solution with optimal complexity O(n + k). Armed with this knowledge,
+adventurers set forth into the realm of strings, ready to maximize their
+lexicographical destiny. May the words guide you to victory!
+chosen
 ### Question-02
 
 In the enchanted land of Numerica, where numbers orchestrated a magical
@@ -78,3 +116,29 @@ An example illuminated the adventurers' path: 'x' as 10142, with 'k'set to 2.
 • The result—the smallest positive integer achievable with 'k' operations—
 was 101. Notably, trailing zeroes were forbidden in this mystical arithmetic.
 ### Question-03
+
+Imagine you are a financial analyst working for an investment firm, and your task
+is to identify the most lucrative investment opportunities in a series of daily stock
+prices. Each day, the stock prices are recorded, and you are given the flexibility to
+choose a sequence of 'k' consecutive days to maximize the profit.
+Array of Stock Prices: Think of an array representing the daily stock prices, where
+each element signifies the closing price of the stock for a specific day.
+[Day 1: $100, Day 2: $110, Day 3: $120, Day 4: $90, Day 5: $130, ...].
+Integer 'k': In this financial analysis challenge, 'k' represents the number of
+consecutive days you can choose to buy and sell the stock. For instance, if 'k' is 3,
+you aim to find the sequence of three consecutive days that would result in the
+maximum profit.
+
+Subsequence with the Highest Profit: The subsequence corresponds to selecting
+'k' consecutive days with the highest cumulative difference in stock prices. The
+objective is to maximize the profit gained from buying and selling stocks during
+this period.
+Queue Data Structure: Visualize a queue-like approach, where you keep track of
+the best 'k' consecutive days while moving through the array of stock prices. The
+algorithm dynamically adjusts the queue to include the most profitable 'k' days,
+ensuring you capitalize on the optimal trading opportunities.
+
+Optimal Time Complexity: By implementing an algorithm inspired by the problem
+statement, you can efficiently analyze the stock prices and identify the 'k'
+consecutive days with the maximum profit. The optimal time complexity (O(n + k)
+or O(n)) ensures quick decision-making without unnecessary delays.
