@@ -70,6 +70,8 @@ String 2 is lexicographically larger."
 Now, imagine you have a string "s" and a magical number "k." Your quest is to find
 the lexicographically maximum possible string after removing k characters.
 Let's embark on a couple of adventures:
+
+
 example 1:
     input s="fzlyoapx", K=2
     output: "zyoapx"
@@ -78,6 +80,8 @@ In this enchanting tale, the string
 "fzlyoapx" holds a secret. To make it as large as possible, we must remove two
 characters. Lexico, with a glint in his eye, identifies the humble 'f' and ‘l’ as the ones. By banishing 'f' and ‘l’ the string transforms into "zyoapx," standing tall as the
 lexicographically maximum.
+
+
 example 2:
     input s="xdycz", K=2
     output: "ycz"
