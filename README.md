@@ -2,6 +2,7 @@
 
 These assignments are done using the concepts of Data Structures such as queue, stack, trees and so on. Descrption regarding each assignments is added below. 
 
+
 ## Assignment -02
 Fast University is situated in the heart of Islamabad, with students hailing from different sectors of the city. They employ various modes of transportation for their daily commute, such as the metro,bus, or simply walking. However, due to the nature of the transportation systems, students often need to combine these modes. You can envision the city's locations as a numbered line starting from 1(one). Movement is restricted to forward and backward along this line. The metro is considerably faster than the bus, and the bus is faster than walking. Unfortunately, the metro can only start and stop at designated metro stations, and the bus can only stop at designated bus stops.
 
@@ -146,3 +147,73 @@ Optimal Time Complexity: By implementing an algorithm inspired by the problem
 statement, you can efficiently analyze the stock prices and identify the 'k'
 consecutive days with the maximum profit. The optimal time complexity (O(n + k)
 or O(n)) ensures quick decision-making without unnecessary delays.
+
+## Assignment -04
+
+In this assignment, you are assigned the task of designing and implementing a Task
+Management System for a project team using Red-Black Trees. Studying Red-Black trees is
+also a part of this assignment. There are numerous resources online but the one specific book
+you can learn from is Data Structures and Algorithm Analysis in C++ by Mark Allen uploaded in
+Google Classroom.
+The objective is to create a comprehensive system that efficiently manages tasks assigned to
+team members, prioritizes tasks based on their urgency, and offers a wide range of operations
+for manipulating and retrieving task information. The assignment aims to provide a practical
+solution for project teams to streamline task management, enhance productivity, and maintain
+organized records of tasks.
+
+##### Requirements
+
+Add Assignee: users shoudl be able to add new assignees to the system by providing info such as first name, last name, address and DOB
+
+Search Assignee by ID: find assignee by their id
+
+Search Assignee by Name: find assignee by their name
+
+Search Assignee with no tasks Assigned
+
+Shift tasks of one assignee to another
+
+Delete Assignee: assignee with tasks cannot be deleted
+
+Add Task: add new tasks to the system by providing info such as task description, priority level and the assignee id 
+
+Complete Task: tasks should be marked as completed when they are finished
+
+Print task Queue: display all tasks sorted according ot priority level
+
+Find highest priority task
+
+Find task by Assignee
+
+Count total Tasks
+
+Update Task priority: the system should allow to update the priority of a specific tasks without removing it from the queue
+
+Clear Completed tasks
+
+Display all completed tasks
+
+Search for task by priority range
+
+###### Red-Black Tree implementation 
+
+The red-black tree should store task records. Each node in the red-black tree represents a task in the system. The node structure of the task tree includes the following fields:
+
+Task ID: unique id
+
+Description: text description of the tasks
+
+Priority level
+
+Assignee ID
+
+Another tree would be created to store the details of Assignee, which would include:
+
+First Name
+Last Name
+Address
+DOB: in day/month/year format
+Assignee ID: auto generated 
+
+Include in order-transversal fucntion of the red-black tree, which would also display the color of each node. Tree is created according to priority of the tasks in task tree and Assignee ID in case of Assignee tree.
+
