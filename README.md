@@ -2,6 +2,103 @@
 
 These assignments are done using the concepts of Data Structures such as queue, stack, trees and so on. Descrption regarding each assignments is added below. 
 
+## Assignment -01
+
+### Question 01
+Part A:
+
+Implement the class ArrayBasics, which offers basic operations over one-dimensional and two-
+dimensional arrays. All methods must be implemented as class methods (i.e., static methods). The given
+
+prototypes are given in int form. You have to make it in template form to support int, float and double
+datatypes. The signature of the methods in the ArrayBasics class are the following:
+1. public static int findMax(int[] A, int i, int j): returns the maximum value occurring in the array
+A between position i and j.
+2. public static int findMaxPos(int[] A, int i, int j): returns the position of the maximum value in
+the array A between position i and j.
+3. public static int findMin(int[] A, int i, int j): returns the minimum value in the array A between
+position i and j.
+4. public static int findMinPos(int[] A, int i, int j): return the position of the minimum value in
+the array A between position i and j.
+5. public static void swap(int[] A, int i, int j): swaps the elements in position i and j in the array
+A.
+6. public static void shiftRight(int[] A, int i, int j): shifts to the right all the elements of the array
+A starting from position i and until position j (i.e., moves the element in position k to position k
++ 1 for all i < k < j, and leaves position i unchanged).
+7. public static void shiftLeft(int[] A, int i, int j): shifts to the left all the elements of the array A,
+from position j down to position i (i.e., moves the element in position k to position k - 1 for all
+i < k < j, and leaves the position j unchanged).
+8. public static int[] createRandomArray(int size, int min, int max): creates and returns an array
+of size size, of random elements with values between min and max.
+9. public static int[][] createRandomMatrix(int rows,int cols, int min, int max): creates and
+returns a two-dimensional array with rows rows and cols columns of random elements with
+values between min and max.
+10. public static int[] copyArray(int[] A, int size): returns an array that is a copy of A.
+11. public static int[][] copyMatrix(int[][] A, int rows, int cols): returns a two-dimensional array
+that is a copy of A.
+12. public static int findInArray(int[] A, int q, int size): returns the position of the number q in the
+array A (returns -1 if q is not present in A).
+13. public static int findInSortedArrary(int[] A, int q, int size): returns the position of the number
+q in the sorted array A (returns -1 if q is not present in A). The method assumes that the array A
+is sorted, it need not be correct if A is not sorted. Exploit the fact that the array is sorted to find
+an efficient algorithm.
+14. public static int findFirstInSortedArrary(int[] A, int q, int size): returns the first position where
+the number q occurs in the sorted array A (returns -1 if q is not present in A). As before, the
+method assumes that the array A is sorted and need not be correct if A is not sorted. Again,
+exploit the fact that the array is sorted to find an efficient algorithm.
+
+Part B:
+Running Time Comparison—Maxsort
+Add to your class ArrayUtility two static methods implementing the algorithm Maxsort, that takes an
+unsorted array of integer numbers as input and sorts it in descending order, by repeatedly doing the
+following:
+• First, it searches in the whole array for the greatest element.
+• it then puts this element to the beginning of the array.
+• Then, it searches the whole array excluding the first element for the greatest value and puts it to
+the second position.
+
+Implement the algorithm according to two different strategies:
+• By using the method shiftRight(int[] A, int i, int j): if the maximum element is found in position
+j and needs to be put into position i, then (i) shift A to the right, starting from position i, while
+remembering the element in position j that will be overridden; (ii) copy the remembered element
+to position i.
+• By using the method swap(int[] A, int i, int j): if the maximum element is found in position i
+and needs to be put into position j, then use swap to exchange the element in position i with the
+element in position j.
+The perform tests to find out which of the two implementations is faster. Is there an array size for which
+the running times crosse over? (A size N would be such a cross-over point if for inputs of size less than
+N, the running times of one algorithm are better, while for inputs of size greater than N, the running
+times of the other algorithm are better.) To perform your measurements, test using steps:
+• creates random arrays of size n = 10, 100, 1000, etc., and
+• for each array created, sorts it using the two implementations of Maxsort and measures the
+running times.
+
+### Question 02
+Micheal Scarn is a forklift operator at Munder Difflin paper company’s central warehouse. He needs to
+ship exactly r reams of paper to a customer. In the warehouse are n boxes of paper, each one foot in
+width, lined up side-by-side covering an n-foot wall. Each box contains a known positive integer
+number of reams, where no two boxes contain the same number of reams. Let B =(b0,...bn−1) be the
+number of reams per box, where box i located i feet from the left end of the wall contains bi reams of
+paper, where bi != bj for all i != j. To minimize his effort, Scarn wants to know whether there is a close
+pair (bi,bj) of boxes, meaning that |i−j| < n/10, that will fulfill order r, meaning that bi + bj = r.
+(a) Given B and r, write an expected O(n)-time algorithm in C++ to determine whether B contains a
+close pair that fulfills order r.
+
+(b) Now suppose that r<n
+ Describe a worst-case O(n)-time algorithm to determine whether B contains a close pair that fulfills order r
+
+### Question 03
+The oil wells of tycoon Ron Weaselton will produce m oil barrels this month. Ron has a list of n orders
+from potential buyers, where the i
+
+th order states a willingness to buy ai barrels for a total price of pi (not
+per barrel). Each order must be filled in completely or not at all, and can only be filled once. Ron does
+not have to sell all of his oil, but he must pay s dollars per unsold barrel in storage costs. Describe an
+O(nm)-time algorithm to determine which orders to fill so that Ron can maximize his profit.
+Function: int maximizeProfit(int m, int n, int a[], int p[], int s);
+
+
+
 
 ## Assignment -02
 Fast University is situated in the heart of Islamabad, with students hailing from different sectors of the city. They employ various modes of transportation for their daily commute, such as the metro,bus, or simply walking. However, due to the nature of the transportation systems, students often need to combine these modes. You can envision the city's locations as a numbered line starting from 1(one). Movement is restricted to forward and backward along this line. The metro is considerably faster than the bus, and the bus is faster than walking. Unfortunately, the metro can only start and stop at designated metro stations, and the bus can only stop at designated bus stops.
