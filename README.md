@@ -195,7 +195,7 @@ Display all completed tasks
 
 Search for task by priority range
 
-###### Red-Black Tree implementation 
+##### Red-Black Tree implementation 
 
 The red-black tree should store task records. Each node in the red-black tree represents a task in the system. The node structure of the task tree includes the following fields:
 
